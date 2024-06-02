@@ -17,6 +17,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LogoIcon } from "./Icons";
+import { Link } from "react-router-dom";
 
 interface RouteProps {
   href: string;
@@ -83,6 +84,15 @@ export const Navbar = () => {
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
+                <Link
+              rel="noreferrer noopener"
+              to="/grow-a-plant"
+              className={`text-[17px] ${buttonVariants({
+                variant: "ghost",
+              })}`}
+            >
+              Grow a Plant
+            </Link>
                   {routeList.map(({ href, label }: RouteProps) => (
                     <a
                       rel="noreferrer noopener"
@@ -96,7 +106,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://github.com/rutvij-fsd/TreeTomorrow/tree/main"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
@@ -112,6 +122,15 @@ export const Navbar = () => {
 
           {/* desktop */}
           <nav className="hidden md:flex gap-2">
+          <Link
+              rel="noreferrer noopener"
+              to="/grow-a-plant"
+              className={`text-[17px] ${buttonVariants({
+                variant: "ghost",
+              })}`}
+            >
+              Grow a Plant
+            </Link>
             {routeList.map((route: RouteProps, i) => (
               <a
                 rel="noreferrer noopener"
@@ -129,7 +148,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/rutvij-fsd/TreeTomorrow/tree/main"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >

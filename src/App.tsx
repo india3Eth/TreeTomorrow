@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About } from "./components/About";
 import { Cta } from "./components/Cta";
 // import { FAQ } from "./components/FAQ";
@@ -14,27 +15,40 @@ import { ScrollToTop } from "./components/ScrollToTop";
 // import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
 import "./App.css";
+import  GrowAPlant  from "./components/GrowAPlant";
+import { MetadataProvider } from './contexts/MetadataContext';
+import { FileCidProvider } from "./contexts/FileCidContext";
+
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      {/* <Sponsors /> */}
-      <About />
-      <HowItWorks />
-      <Features />
-      {/* <Services /> */}
-      <Cta />
-      <Testimonials />
-      {/* <Team /> */}
-      <Pricing />
-      <Newsletter />
-      {/* <FAQ /> */}
-      <Footer />
+    <Router>
       <ScrollToTop />
-    </>
+      <Navbar />
+        <FileCidProvider>
+         <MetadataProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/grow-a-plant" element={<GrowAPlant />} />
+      </Routes>
+        </MetadataProvider>
+       </FileCidProvider>
+      <Footer />
+    </Router>
   );
 }
+
+const Home = () => (
+  <>
+    <Hero />
+    <About />
+    <HowItWorks />
+    <Features />
+    <Cta />
+    <Testimonials />
+    <Pricing />
+    <Newsletter />
+  </>
+);
 
 export default App;
