@@ -3,13 +3,13 @@
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/leoMirandaa/shadcn-landing-page.git
+git clone https://github.com/rutvij-fsd/TreeTomorrow.git
 ```
 
 2. Go into project
 
 ```bash
-cd shadcn-landing-page
+cd TreeTomorrow
 ```
 
 3. Install dependencies
