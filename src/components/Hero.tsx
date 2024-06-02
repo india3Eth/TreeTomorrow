@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 import { HeroCards } from "./HeroCards";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { GirlWithEthIcon } from "./Icons";
 
 export const Hero = () => {
   return (
@@ -9,27 +10,32 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
+            Make a lasting
+            {" "}
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
-            </span>{" "}
-            landing page
+            Impact
+            </span>
           </h1>{" "}
-          for{" "}
+          by{" "}
           <h2 className="inline">
             <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
+            Planting a Tree
             </span>{" "}
-            developers
+            and receive an
+            {" "}
+            <span className="inline bg-gradient-to-r from-[#7dfab1] via-[#34d979] to-[#02ad4a] text-transparent bg-clip-text">
+             NFT
+            </span>{" "}
+            as proof.
           </h2>
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Build your React landing page effortlessly with the required sections
-          to your project.
+        Join our mission to reforest the planet. Each tree you plant will be recorded on the blockchain and you'll receive an NFT with its geolocation and image.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+          <Button className="w-full md:w-1/3">Plant a Tree Now</Button>
 
           <a
             rel="noreferrer noopener"
@@ -39,7 +45,7 @@ export const Hero = () => {
               variant: "outline",
             })}`}
           >
-            Github Repository
+            Learn More
             <GitHubLogoIcon className="ml-2 w-5 h-5" />
           </a>
         </div>
@@ -47,7 +53,9 @@ export const Hero = () => {
 
       {/* Hero cards sections */}
       <div className="z-10">
-        <HeroCards />
+        
+        <GirlWithEthIcon/>
+        {/* <HeroCards /> */}
       </div>
 
       {/* Shadow effect */}

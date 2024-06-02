@@ -17,45 +17,46 @@ interface TestimonialProps {
 const testimonials: TestimonialProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
+    name: "John Doe",
     userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    comment: "Amazing platform! Easy to use and helps the environment.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
+    name: "John Doe",
     userName: "@john_Doe1",
     comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+    "TreeTomorrow has revolutionized the way I participate in reforestation efforts. The blockchain transparency is unmatched, and I love being part of a global community dedicated to planting trees. This platform is a game-changer, allowing me to see the tangible results of my contributions.",
+
   },
 
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
+    name: "John Doe",
     userName: "@john_Doe2",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    "I appreciate how secure and transparent the platform is. Knowing my contributions are blockchain-recorded gives me peace of mind.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
+    name: "John Doe",
     userName: "@john_Doe3",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "I've been using TreeTomorrow for a few months now, and it's been an incredible experience. The platform's security is top-notch, with all transactions recorded on the blockchain, ensuring no central database vulnerabilities. The intuitive user interface makes planting trees a breeze, and I love the gamification aspect, earning rewards and badges for my efforts. Joining TreeTomorrow's community has been one of my best decisions!",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
+    name: "John Doe",
     userName: "@john_Doe4",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+    "Planting trees has never been easier. Love the transparency and real-time tracking features!",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
+    name: "John Doe",
     userName: "@john_Doe5",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "TreeTomorrow's interface is so intuitive! I was able to plant trees effortlessly. Highly recommend this platform to all tree enthusiasts.",
   },
 ];
 
@@ -71,12 +72,10 @@ export const Testimonials = () => {
           {" "}
           People Love{" "}
         </span>
-        This Landing Page
+        TreeTomorrow
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">

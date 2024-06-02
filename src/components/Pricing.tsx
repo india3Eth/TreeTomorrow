@@ -26,48 +26,45 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Starter",
     popular: 0,
-    price: 0,
+    price: 0.001,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Plant a tree and receive an ENS subname NFT with a photo and geotagging as proof.",
     buttonText: "Get Started",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
+      "1 tree",
+      "1 ENS subname NFT 1155",
+      "Geolocation and image proof",
       "Community support",
-      "lorem ipsum dolor",
     ],
   },
   {
     title: "Premium",
     popular: 1,
-    price: 5,
+    price: 0.005,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Plant multiple trees and receive ENS subname NFTs with photos and geotagging as proof.",
     buttonText: "Start Free Trial",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
+      "5 tree",
+      "5 ENS subname NFT 1155",
+      "Geolocation and image proof",
       "Priority support",
-      "lorem ipsum dolor",
     ],
   },
   {
     title: "Enterprise",
     popular: 0,
-    price: 40,
+    price: 0.01,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "For larger contributions, plant multiple trees and receive ENS subname NFTs with photos and geotagging as proof.",
     buttonText: "Contact US",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
+      "10 tree",
+      "10 ENS subname NFT 1155",
+      "Geolocation and image proof",
       "Priority support",
-      "lorem ipsum dolor",
     ],
   },
 ];
@@ -82,13 +79,12 @@ export const Pricing = () => {
         Get
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          Access{" "}
         </span>
-        Access
+        
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+      
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -113,8 +109,8 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-3xl font-bold">{pricing.price} $ETH</span>
+                <span className="text-muted-foreground"> /tree</span>
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>

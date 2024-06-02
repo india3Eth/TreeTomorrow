@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/undraw_digital_currency_qpak.png";
+import image3 from "../assets/undraw_Ether_re_y7ft.png";
+import image4 from "../assets/undraw_nakamoto_2iv6.png";
 
 interface FeatureProps {
   title: string;
@@ -18,34 +18,32 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Blockchain",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Every tree you plant is recorded on the blockchain, ensuring transparency and traceability. Review and verify the entire process from start to finish.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "User Interface",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our user-friendly interface makes it easy for anyone to participate in reforestation efforts. Navigate through the platform with ease.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Security",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our platform ensures maximum security by recording every transaction on the blockchain. No central database is used, so your data and contributions are decentralized and tamper-proof, providing unparalleled security and trust.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
+  "Blockchain",
+  "Interface",
+  "Community",
+  "Rewards",
+  "Visualization",
+  "Security",
   "Minimalist",
 ];
 
